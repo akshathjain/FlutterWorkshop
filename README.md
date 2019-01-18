@@ -75,3 +75,4 @@ To launch an emulator, run `flutter emulators --launch <emulator_id>`.
 - `flutter clean` deletes all Flutter build files
 
 ### Slides & Code
+The presentation slides and code can be found on [GitHub](https://github.com/akshathjain/FlutterWorkshop).
