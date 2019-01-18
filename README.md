@@ -6,7 +6,7 @@ Flutter is a cross-platform, mobile development framework created by Google. Wit
 
 ### Attending
 
-No experience with Flutter, Dart, or mobile programming is necessary. And while not required, some experience with programming is recommended.
+No experience with Flutter, Dart, or mobile programming is necessary. And while not required, some experience with programming is recommended. Please follow the instructions below to install the necessary software prior to the workshop.
 
 
 ### Flutter Installation
@@ -35,21 +35,43 @@ Your output should look something like this:
 Flutter allows you to install your applications directly onto physical hardware using `flutter run`. However, if you don't have a device that you can use, you can install an emulator relatively easily.
 
 **Android**
-- Install Android Studio
-- 
+- Install and run [Android Studio](https://developer.android.com/studio/)
+- Go to *Tools -> AVD Manager -> Create Virtual Device* and configure your emulator
 
 **iOS (macOS only)**
-- Install xCode
+- Install and run [Xcode](https://developer.apple.com/xcode/)
 - Go to *Preferences -> Components* and choose the emulator you would like to install
 
 
 ### Running the Emulator
 
-To run either the iOS or Android emulator, run `flutter emulators --launch <name of emulator>`.\
-To list availabe emulators, run `flutter emulators`.\
-Note that to install an Android emulator, you'll need to have Android
+To list all availabe emulators, run `flutter emulators`. Your output should look something like this:
+```
+2 available emulators:
+
+Pixel_2_XL_API_28   • pixel_2_xl    • Google • Pixel 2 XL API 28
+apple_ios_simulator • iOS Simulator • Apple
+
+To run an emulator, run 'flutter emulators --launch <emulator id>'.
+To create a new emulator, run 'flutter emulators --create [--name xyz]'.
+
+You can find more information on managing emulators at the links below:
+  https://developer.android.com/studio/run/managing-avds
+  https://developer.android.com/studio/command-line/avdmanager
+```
+
+To launch an emulator, run `flutter emulators --launch <emulator_id>`.
 
 
-### Slides
+### Basic Flutter Terminal Commands
+- `flutter doctor` validates Flutter setup
+- `flutter create <app_name>` creates a new Flutter project
+- `flutter emulators` lists all availabe Flutter emulators
+- `flutter emulators --launch <emulator_id>` launches a Flutter emulator
+- `flutter run` runs a Flutter application in Debug Mode
+	- `R` while running app performs a full app restart
+	- `r` while running app performs a hot reload
+- `flutter run --release` runs a Flutter application in Release Mode (physical devices only)
+- `flutter clean` deletes all Flutter build files
 
-### Code
+### Slides & Code
