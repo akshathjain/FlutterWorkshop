@@ -1,0 +1,20 @@
+api.openweathermap.org/data/2.5/weather?id=5206379&appid=apikey
+- name
+- main
+    - humidity
+    - pressure
+    - temp
+    - temp_max
+    - temp_min
+
+
+Pittsburgh Information
+{
+    "id": 5206379,
+    "name": "Pittsburgh",
+    "country": "US",
+    "coord": {
+      "lon": -79.995888,
+      "lat": 40.44062
+    }
+}
