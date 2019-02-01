@@ -1,4 +1,11 @@
+/*
+Name: Akshath Jain
+Date: 2/1/19
+Purpose: weather viewer
+*/
+
 import 'package:flutter/material.dart';
+import 'WeatherView.dart';
 
 void main() => runApp(MyApp());
 

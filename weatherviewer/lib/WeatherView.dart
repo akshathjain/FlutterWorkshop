@@ -6,6 +6,8 @@ Purpose: display a cities weatehr
 
 import 'package:flutter/material.dart';
 import 'APIKey.dart';
+import 'package:http/http.dart' as http;
+import 'dart:convert';
 
 class WeatherView extends StatefulWidget{
   WeatherView({Key key, this.cityId}) : super(key: key);
