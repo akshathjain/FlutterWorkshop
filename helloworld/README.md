@@ -1,3 +1,3 @@
-# helloworld (demo)
+# helloworld (Demo)
 
 The Flutter workshop demo
