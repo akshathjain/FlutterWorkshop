@@ -84,3 +84,6 @@ To launch an emulator, run `flutter emulators --launch <emulator_id>`.
 
 ### Slides & Code
 The presentation slides and code can be found on [GitHub](https://github.com/akshathjain/FlutterWorkshop).
+
+### Lab
+The lab can be found on [GitHub](https://github.com/akshathjain/FlutterWorkshop/tree/master/weatherviewer).
