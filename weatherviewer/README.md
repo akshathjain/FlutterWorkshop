@@ -24,3 +24,5 @@ The data you will be using is sourced from the [OpenWeatherMap API](https://open
 
 
 ### Screenshots
+![Home Screen](https://github.com/akshathjain/FlutterWorkshop/blob/master/weatherviewer/screenshots/Home.png?raw=true)
+![Weather View](https://github.com/akshathjain/FlutterWorkshop/blob/master/weatherviewer/screenshots/Weather.png?raw=true)
