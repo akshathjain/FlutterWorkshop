@@ -1,6 +1,6 @@
 /*
 Name: Akshath Jain
-Date: 1/2/19
+Date: 2/2/19
 Purpose: displays weather
 */
 
@@ -21,20 +21,38 @@ class _WeatherCardState extends State<WeatherCard>{
   @override
   Widget build(BuildContext context) {
     return Container( 
-      padding: const EdgeInsets.all(20.0),
+      padding: const EdgeInsets.all(15.0),
       child: Container(
         child: InkWell(
           child: Container(
             padding: const EdgeInsets.all(20.0),
             alignment: Alignment.center,
-            child: Text(
-              widget.name, 
-              textAlign: TextAlign.center,
-              style: TextStyle(
-                fontSize: 16.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.white
-              )
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                Text(
+                  widget.temperature.toString() + "°",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 40.0,
+                  ),
+                ),
+                SizedBox(height: 10.0,),
+                Text(
+                  widget.name, 
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.white,
+                  ),
+                  maxLines: 1,
+                  overflow: TextOverflow.ellipsis,
+                ),
+              ],
             ),
             decoration: BoxDecoration(
               color: widget.color,
@@ -47,8 +65,9 @@ class _WeatherCardState extends State<WeatherCard>{
           borderRadius: BorderRadius.circular(20.0),
           boxShadow:[ 
             BoxShadow(
-              color: Colors.black12,
-              blurRadius: 15.0
+              color: Colors.black26,
+              blurRadius: 15.0,
+              offset: Offset(0, 10.0)
             )
           ]
         ),

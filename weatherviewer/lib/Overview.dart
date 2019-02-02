@@ -10,6 +10,8 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'WeatherCard.dart';
+import 'Utils.dart';
+import 'WeatherView.dart';
 
 class Overview extends StatefulWidget{
   Overview({Key key}) : super(key: key);
@@ -40,6 +42,7 @@ class _OverviewState extends State<Overview>{
 
     return GridView.count(
       crossAxisCount: 2,
+      padding: const EdgeInsets.all(12.0),
       children: _createGridChildren(),
     );
   }
@@ -49,22 +52,28 @@ class _OverviewState extends State<Overview>{
     for(int i = 0; i < _info.length; i++){
       l.add(WeatherCard(
         name: _info[i]["name"],
+        temperature: Utils.KtoF(_info[i]["main"]["temp"]).toInt(),
         color: _getColor(_info[i]["name"]),
-        onTap: () => print("tap"),
+        onTap: () => Navigator.push(context, MaterialPageRoute(
+          builder: (BuildContext context) { return WeatherView(
+            info: _info[i],
+          );}
+        )),
       ));
     }
     return l;
   }
 
+  int _colorSeed = 0;
   Color _getColor(String seed){
-    int x = (seed.codeUnitAt(0) + seed.codeUnitAt(seed.length - 1)) % 7;
-    switch (x){
+    _colorSeed++;
+    switch (_colorSeed % 7){
       case 0: 
         return Colors.red;
       case 1:
         return Colors.orange;
       case 2: 
-        return Colors.yellow;
+        return Colors.amberAccent;
       case 3:
         return Colors.green;
       case 4:
