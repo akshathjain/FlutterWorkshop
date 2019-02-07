@@ -12,7 +12,7 @@ speaker: Akshath Jain
 Flutter is a cross-platform, mobile development framework created by Google. With user-centric design in mind, Flutter allows developers to create beautiful native apps on iOS and Android from a single codebase.
 
 
-### Attending
+**Attending**
 
 No experience with Flutter, Dart, or mobile programming is necessary. And while not required, some experience with programming is recommended. Please follow the instructions below to install the necessary software prior to the workshop.
 
