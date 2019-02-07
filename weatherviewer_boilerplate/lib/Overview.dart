@@ -18,7 +18,7 @@ class _OverviewState extends State<Overview>{
   }
 
   Future<List> _fetchInfo() async{
-    //"https://akshathjain.com/FlutterWorkshop/json/weather_info.json"
+    //"https://raw.githubusercontent.com/akshathjain/FlutterWorkshop/master/json/weather_info.json"
     return null;
   }
 }
