@@ -1,3 +1,5 @@
+//fullpage, displays a detailed view of weather from each city
+
 import 'package:flutter/material.dart';
 import 'Utils.dart';
 

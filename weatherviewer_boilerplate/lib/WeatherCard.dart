@@ -1,7 +1,7 @@
 /*
 Name: Akshath Jain
 Date: 2/2/19
-Purpose: displays weather
+Purpose: displays weather in a nicely formatted card
 */
 
 import 'package:flutter/material.dart';
