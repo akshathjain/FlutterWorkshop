@@ -119,7 +119,7 @@ Good luck, and have fun!
 
 ### Fetching Data
 
-The data you will be using is sourced from the [OpenWeatherMap API](https://openweathermap.org/api). However, instead of fiddling with API Keys and rate limits, a sample JSON file is available at https://akshathjain.com/FlutterWorkshop/json/weather_info.json. Treat that as your "API" for the purposes of this lab. Although, you're definitely more than welcome to try and use the real thing!
+The data you will be using is sourced from the [OpenWeatherMap API](https://openweathermap.org/api). However, instead of fiddling with API Keys and rate limits, a sample JSON file is available at [https://akshathjain.com/FlutterWorkshop/json/weather_info.json](https://akshathjain.com/FlutterWorkshop/json/weather_info.json). Treat that as your "API" for the purposes of this lab. Although, you're definitely more than welcome to try and use the real thing!
 
 
 ### Screenshots
