@@ -88,7 +88,7 @@ class _OverviewState extends State<Overview>{
   }
 
   Future<List> _fetchInfo() async{
-    var response = await http.get("https://akshathjain.com/FlutterWorkshop/json/weather_info.json");
+    var response = await http.get("https://raw.githubusercontent.com/akshathjain/FlutterWorkshop/master/json/weather_info.json");
     return jsonDecode(response.body);
   }
 }
