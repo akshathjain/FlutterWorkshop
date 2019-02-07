@@ -17,6 +17,8 @@ Flutter is a cross-platform, mobile development framework created by Google. Wit
 No experience with Flutter, Dart, or mobile programming is necessary. And while not required, some experience with programming is recommended. Please follow the instructions below to install the necessary software prior to the workshop.
 
 
+## Getting Started
+
 ### Flutter Installation
 
 Follow the instructions found on the flutter website to get started. When asked to setup your environment, choose VS Code (as opposed to Android Studio).
@@ -83,7 +85,43 @@ To launch an emulator, run `flutter emulators --launch <emulator_id>`.
 - `flutter clean` deletes all Flutter build files
 
 ### Slides & Code
-The presentation slides and code can be found on [GitHub](https://github.com/akshathjain/FlutterWorkshop).
+The presentation slides and code can be found on [GitHub](https://github.com/akshathjain/FlutterWorkshop).    
 
-### Lab
-The lab can be found on [GitHub](https://github.com/akshathjain/FlutterWorkshop/tree/master/weatherviewer).
+
+
+
+
+
+## Lab
+
+The lab can be found on [GitHub](https://github.com/akshathjain/FlutterWorkshop/).
+
+### Getting Started
+
+Run `flutter create weatherviewer` and open your project in VS Code.
+
+Alternatively, you can clone this repository to download the boilerplate code by running:  
+- `git clone https://github.com/akshathjain/FlutterWorkshop`
+- `cd FlutterWorkshop/weatherviwer_boilerplate`
+
+### Overview
+
+In this lab, you will be creating a simple Weather app using Flutter. Using skills covered during the presentation, your app should be able to:
+
+- Fetch weather data from the internet
+- Display weather across several cities
+- Show the forecast for the next few days
+
+This project is fairly open-ended, so feel free to design your app however you wish! Screenshots and code from a sample [WeatherViewer](https://github.com/akshathjain/FlutterWorkshop/tree/master/weatherviewer) are provided if you get stuck, or need to reference any components. If you have any questions, feel free to contact any of the TAs for help. 
+
+Good luck, and have fun!
+
+
+### Fetching Data
+
+The data you will be using is sourced from the [OpenWeatherMap API](https://openweathermap.org/api). However, instead of fiddling with API Keys and rate limits, a sample JSON file is available at https://akshathjain.com/FlutterWorkshop/json/weather_info.json. Treat that as your "API" for the purposes of this lab. Although, you're definitely more than welcome to try and use the real thing!
+
+
+### Screenshots
+![Home Screen](https://github.com/akshathjain/FlutterWorkshop/blob/master/weatherviewer/screenshots/Home.png?raw=true)
+![Weather View](https://github.com/akshathjain/FlutterWorkshop/blob/master/weatherviewer/screenshots/Weather.png?raw=true)

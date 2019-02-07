@@ -1,3 +1,3 @@
 # helloworld (Demo)
 
-The Flutter workshop demo
+A simple hello world app to view the basics of Flutter
