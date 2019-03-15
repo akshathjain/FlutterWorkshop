@@ -75,7 +75,7 @@ To launch an emulator, run `flutter emulators --launch <emulator_id>`.
 ### Basic Flutter Terminal Commands
 - `flutter doctor` validates Flutter setup
 - `flutter create <app_name>` creates a new Flutter project
-- `flutter emulators` lists all availabe Flutter emulators
+- `flutter emulators` lists all available Flutter emulators
 - `flutter emulators --launch <emulator_id>` launches a Flutter emulator
 - `flutter run` runs a Flutter application in Debug Mode
 	- `R` while running app performs a full app restart
